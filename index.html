@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bidding app</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body id="appBody">
+
+    <button id="resetbtn" onclick="reset()">
+        <i class="fa-solid fa-rotate-left rstbtn"></i>
+    </button>
+
+    <section id="outerSec">
+
+        <h1>BI<b>DD</b>NG <b> A</b>PP</h1>
+
+        <div id="outer_div">
+
+            <div id="frst_div">
+
+                <h3 id="initialAmount">
+                    <p class="undr_wlt">
+                        <i class="fa-solid fa-wallet wlt"></i>
+                        Your amount
+                    </p>
+                    <span id="yourAmount"></span>
+                </h3>
+
+            </div>
+
+
+            <div id="scnd_div">
+
+                <label for="userVal">
+                    Your Bid value:
+                </label>
+                <input class="input" type="text" id="userVal" placeholder="Enter your dice value">
+
+                <br>
+
+                <label for="userAmount">
+                    Your Bid amount:
+                </label>
+                <input class="input" type="text" id="userAmount" placeholder="Enter your bidding amount">
+
+            </div>
+
+            <div id="third_div">
+
+                <div>
+                    <img src="./images/1.png" alt="user dice" class="dice" id="user_dice">
+                    <center>
+                        <p class="undr_dice">Your dice</p>
+                    </center>
+                </div>
+
+                <div>
+                    <img src="./images/1.png" alt="comp dice" class="dice" id="comp_dice">
+                    <center>
+                        <p class="undr_dice">Game dice</p>
+                    </center>
+                </div>
+
+                <div id="msg_div">
+                    <p class="message" id="message1"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <center>
+            <button type="" onclick="playGame()" id="plybtn">
+                <i class="fa-solid fa-circle-play btn"></i>
+                <!-- <img src="./play btn.png" alt="play" class="btn"> -->
+            </button>
+        </center>
+
+        <p class="message" id="message2"></p>
+
+    </section>
+
+
+
+    <script src="./app.js"></script>
+
+    <script src="https://kit.fontawesome.com/69f2d8784f.js"></script>
+
+</body>
+
+</html>

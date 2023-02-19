@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: whitesmoke;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/carl-raw-7H7KVCihBvI-unsplash.jpg);
+    background-size: cover;
+    display: grid;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* width: 100%;
+    height: 100vh; */
+}
+
+#resetbtn {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #00b4d8;
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.rstbtn {
+    font-size: 15px;
+    color: #a8dadc;
+}
+
+
+#outerSec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+h1 {
+    color: #a8dadc;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px 0px 20px 0px;
+}
+
+b {
+    color: #00b4d8;
+}
+
+
+
+#outer_div {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#frst_div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+#initialAmount {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    font-size: 25px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+#yourAmount {
+    font-size: 35px;
+    color: #dbff00;
+}
+
+.wlt {
+    font-size: 45px;
+}
+
+
+#scnd_div {
+    width: 34%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 7px 50px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ef233c;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.input::placeholder {
+    color: gainsboro;
+}
+
+.input:focus {
+    border: none;
+    border-color: #ef233c;
+    border-style: solid;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#third_div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+
+
+.dice {
+    height: 70px;
+    width: 70px;
+    border-radius: 7px;
+}
+
+.undr_dice {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+}
+
+.undr_wlt {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+#plybtn {
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #00b4d8;
+    cursor: pointer;
+    background: transparent;
+    /* background-image: url(./play\ btn.png);
+    background-size: cover; */
+    opacity: 1;
+}
+
+#plybtn:disabled {
+    opacity: 0.5;
+}
+
+
+.btn {
+    font-size: 50px;
+    color: #a8dadc;
+}
+
+
+
+.message {
+    color: #dbff00;
+    text-align: center;
+    font-size: 18px;
+    margin: 40px;
+    height: 20px;
+}
+
+#message1 {
+    display: none;
+    /* position: absolute; */
+    /* visibility: hidden; */
+}
+
+#message2 {
+    display: block;
+    /* position: relative;
+    z-index: 2; */
+    /* visibility: hidden; */
+}
+
+
+@media screen and (max-width: 700px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: whitesmoke;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/carl-raw-7H7KVCihBvI-unsplash.jpg);
+        background-size: cover !important;
+        background-repeat: no-repeat;
+
+    }
+
+    #outerSec {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 30px 0px 10px 0px;
+    }
+
+    #outer_div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #frst_div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #yourAmount {
+        font-size: 25px;
+    }
+
+    .wlt {
+        font-size: 35px;
+    }
+
+
+
+    #scnd_div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .input {
+        font-size: 17px;
+        text-align: center;
+        padding: 8px 100px;
+        margin-bottom: 3px;
+    }
+
+    #third_div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* justify-self: center; */
+        align-self: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 10px;
+    }
+
+    .dice {
+        width: 50px;
+        height: 50px;
+    }
+
+    #message1 {
+        display: flex;
+        margin: 0px;
+        text-align: right;
+    }
+
+    #msg_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+    }
+
+    #message2 {
+        display: none;
+    }
+
+    #plybtn {
+        margin: 30px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .btn {
+        font-size: 70px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        color: whitesmoke;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./carl-raw-7H7KVCihBvI-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover !important;
+
+    }
+
+    #outerSec {
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 30px 0px 10px 0px;
+    }
+
+    #outer_div {
+        margin-top: 10px;
+    }
+
+    #scnd_div {
+        margin: 60px 0px 50px 0px;
+    }
+
+    .input {
+        font-size: 15px;
+        padding: 10px 60px;
+    }
+
+    #yourAmount {
+        font-size: 20px;
+    }
+
+    .wlt {
+        font-size: 27px;
+    }
+
+    #third_div {
+        width: 90%;
+        justify-content: left;
+    }
+
+    #msg_div {
+        display: none;
+    }
+
+    #message1 {
+        display: none;
+    }
+
+    #message2 {
+        display: flex;
+        margin: 0px 0px 20px 0px;
+    }
+
+    #plybtn {
+        margin: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn {
+        font-size: 50px;
+    }
+}
+
+
+
+/* @media screen and (max-width: 400px) {} */
